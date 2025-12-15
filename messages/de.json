@@ -1,0 +1,27 @@
+{
+  "HomePage": {
+    "title": "Professionelle Reinigungsdienste für Wohnungen und Büros",
+    "subtitle": "Professionelle Reinigungsdienste für Ihr Zuhause und Büro.",
+    "getQuote": "Angebot einholen",
+    "ourServices": "Unsere Dienstleistungen"
+  },
+  "Navigation": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "bookNow": "Jetzt Buchen"
+  },
+  "Footer": {
+    "brandStatement": "Professionelle Reinigungsdienste, denen Sie vertrauen können. Wir lassen Ihre Räume strahlen.",
+    "links": "Links",
+    "home": "Startseite",
+    "services": "Leistungen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "legal": "Rechtliches",
+    "privacy": "Datenschutz",
+    "imprint": "Impressum",
+    "copyright": "Alle Rechte vorbehalten."
+  }
+}

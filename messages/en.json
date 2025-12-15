@@ -1,0 +1,27 @@
+{
+  "HomePage": {
+    "title": "Professional Cleaning Services for Homes and Offices",
+    "subtitle": "Professional cleaning services for your home and office.",
+    "getQuote": "Get a quote",
+    "ourServices": "Our services"
+  },
+  "Navigation": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "bookNow": "Book Now"
+  },
+  "Footer": {
+    "brandStatement": "Professional cleaning services you can trust. We make your space shine.",
+    "links": "Links",
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "imprint": "Imprint",
+    "copyright": "All rights reserved."
+  }
+}
