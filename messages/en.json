@@ -1,9 +1,221 @@
 {
   "HomePage": {
-    "title": "Professional Cleaning Services for Homes and Offices",
-    "subtitle": "Professional cleaning services for your home and office.",
-    "getQuote": "Get a quote",
-    "ourServices": "Our services"
+    "hero": {
+      "title": "Professional Cleaning Services for Homes and Offices",
+      "subtitle": "Experience the joy of a spotless space. We bring over 20 years of experience to your doorstep.",
+      "ctaPrimary": "Get a quote",
+      "ctaSecondary": "Our services"
+    },
+    "sections": {
+      "services": {
+        "title": "Our Company Provide The Best Cleaning Service",
+        "subtitle": "Comprehensive cleaning solutions tailored to your specific needs."
+      },
+      "whyUs": {
+        "title": "Why Choose RaniClean?",
+        "subtitle": "Experience the difference that two decades of expertise, innovation, and unwavering commitment make in every space we touch",
+        "image1": {
+          "title": "Luxury Hotel Standards",
+          "description": "5-star quality cleaning for your home and office"
+        },
+        "image2": {
+          "title": "Professional Excellence",
+          "description": "Trained specialists delivering consistent results"
+        },
+        "image3": {
+          "title": "Innovative Solutions",
+          "description": "Modern techniques meet traditional reliability"
+        },
+        "features": {
+          "experience": {
+            "title": "20+ Years Expertise",
+            "description": "Two decades of industry-leading experience across hotels, offices, and commercial spaces"
+          },
+          "quality": {
+            "title": "Uncompromising Quality",
+            "description": "Rigorous standards and quality assurance in every project we undertake"
+          },
+          "flexibility": {
+            "title": "Flexible Scheduling",
+            "description": "Available when you need us, with transparent pricing and no hidden fees"
+          },
+          "care": {
+            "title": "Caring Team",
+            "description": "Respectful, motivated professionals who treat your space with the utmost care"
+          }
+        }
+      },
+      "testimonials": {
+        "title": "What Our Clients Say"
+      },
+      "faq": {
+        "title": "FAQ Everything You Need to Know"
+      }
+    },
+    "servicesList": {
+      "commercial": {
+        "title": "Commercial cleaning",
+        "description": "Reliable cleaning tailored for offices, shops, and businesses."
+      },
+      "window": {
+        "title": "Window cleaning",
+        "description": "Streak-free windows delivering crystal-clear outdoor views."
+      },
+      "eco": {
+        "title": "Eco-friendly cleaning",
+        "description": "Safe, green cleaning with eco-conscious products and methods."
+      },
+      "floor": {
+        "title": "Floor Cleaning",
+        "description": "Sparkling clean floors with stain and dirt removal."
+      },
+      "appliance": {
+        "title": "Appliance cleaning",
+        "description": "Extend appliance life with professional, detailed cleaning."
+      },
+      "restroom": {
+        "title": "Restroom sanitization",
+        "description": "Deep cleaning ensures spotless, hygienic, odor-free restrooms."
+      }
+    },
+    "features": {
+      "staff": "Over 20 Years Experience",
+      "schedule": "Flexibility & Availability",
+      "products": "Respectful & Motivated Staff",
+      "pricing": "Transparent Pricing"
+    },
+    "testimonials": {
+      "review1": "Absolutely amazing service! My apartment has never looked this clean.",
+      "review2": "Reliable, professional, and thorough. Highly recommended for office cleaning.",
+      "review3": "The team was on time and did a fantastic job with the move-out cleaning."
+    },
+    "faq": {
+      "q1": {
+        "question": "What types of services do you offer?",
+        "answer": "We provide a wide range of cleaning solutions, including restroom sanitization, appliance cleaning, floor cleaning, eco-friendly cleaning, window cleaning, and commercial cleaning — ensuring your home or business stays spotless and hygienic."
+      },
+      "q2": {
+        "question": "How much does a cleaning service cost per hour?",
+        "answer": "Our pricing depends on the size of your space and the type of service you need. We offer transparent, affordable hourly rates with no hidden charges. You can also request a free quote to find the best package for your budget."
+      },
+      "q3": {
+        "question": "Do I need to be home during the cleaning?",
+        "answer": "No, you don’t need to be home while we clean. Our team is fully trained, trustworthy, and insured. You can confidently leave us to handle everything and return to a fresh, clean environment."
+      },
+      "q4": {
+        "question": "Are your cleaning products safe and eco-friendly?",
+        "answer": "Yes, absolutely! We use eco-friendly, non-toxic cleaning products that are safe for your family, pets, and the environment — ensuring a clean home without harmful chemicals."
+      },
+      "q5": {
+        "question": "How can I book a cleaning service?",
+        "answer": "Booking is simple! You can schedule your cleaning online, call us directly, or send an email. Choose a date and time that works best for you, and we’ll handle the rest."
+      }
+    },
+    "cta": {
+      "title": "Your clean happy space is just one click away",
+      "subtitle": "Let RaniClean transform your home or office into a spotless sanctuary. Book your service in just a few clicks — fast, easy",
+      "button": "Get a quote"
+    }
+  },
+  "AboutPage": {
+    "title": "About Us",
+    "subtitle": "Excellence in cleaning services, delivered with precision and care",
+    "story": {
+      "title": "Our Story",
+      "content": "With over 20 years of professional experience in the cleaning industry, we bring unparalleled expertise to every project. Our comprehensive services span from luxury 2 to 5-star hotels to modern offices, medical facilities, specialized window cleaning, and public spaces. We combine traditional cleaning excellence with innovative techniques and eco-friendly solutions, operating across multiple regions to serve our diverse clientele.",
+      "philosophy": "We craft personalized solutions tailored to your unique needs and vision. Our commitment to flexibility, transparency, and constant availability sets us apart. Beyond compliance with industry standards, we foster a culture of respect and motivation, ensuring our team delivers exceptional results while maintaining the highest levels of professionalism."
+    },
+    "stats": {
+      "experience": "Years Experience",
+      "commitment": "Quality Commitment"
+    },
+    "gallery": {
+      "title": "Our Work in Action",
+      "subtitle": "See how we transform spaces with precision, care, and innovative cleaning solutions",
+      "image1": "Professional Excellence",
+      "image2": "Eco-Friendly Solutions",
+      "image3": "Commercial Expertise"
+    },
+    "features": {
+      "innovation": {
+        "title": "Innovation Meets Tradition",
+        "description": "We blend cutting-edge cleaning technologies with time-tested methods, ensuring every space receives the perfect balance of modern efficiency and proven reliability."
+      },
+      "quality": {
+        "title": "Uncompromising Quality Standards",
+        "description": "Every project undergoes rigorous quality checks. We don't just clean—we create environments that inspire confidence, health, and well-being for everyone who uses them."
+      },
+      "team": {
+        "title": "Expert Team, Personal Touch",
+        "description": "Our highly trained professionals bring passion and dedication to every job. We invest in continuous training and development, ensuring our team stays at the forefront of industry best practices."
+      }
+    }
+  },
+  "ContactPage": {
+    "title": "Contact Us",
+    "subtitle": "We are here for you",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "service": "Service Type",
+      "message": "Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you! We will get back to you soon.",
+      "sendAnother": "Send another message",
+      "selectService": "Select a service",
+      "errorTitle": "Error",
+      "error": "Something went wrong. Please try again later.",
+      "validation": {
+        "nameMin": "Name must be at least 2 characters",
+        "emailInvalid": "Invalid email address",
+        "serviceRequired": "Please select a service",
+        "messageMin": "Message must be at least 10 characters"
+      },
+      "phoneNotProvided": "Not provided",
+      "services": {
+        "home": "Home Cleaning",
+        "office": "Office Cleaning",
+        "deep": "Deep Cleaning"
+      }
+    },
+    "info": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "whatWeCanDo": {
+      "title": "What can we actually do for you?",
+      "subtitle": "Choosing RaniClean means placing your loved ones in the hands of a deeply dedicated, compassionate, and experienced team—committed to providing exceptional care",
+      "features": {
+        "experience": {
+          "title": "Experience and Expertise",
+          "description": "Our skilled team brings years of experience, ensuring top-quality cleaning with attention to detail, reliability, and a professional touch every time."
+        },
+        "comprehensive": {
+          "title": "Comprehensive Care Approach",
+          "description": "We go beyond surface cleaning, combining deep sanitization, eco-friendly products, and consistent maintenance for a healthier, safer living environment."
+        },
+        "quality": {
+          "title": "Commitment to Quality and Safety",
+          "description": "From safe products to trained staff, we prioritize hygiene and protection—delivering a spotless, refreshing space you can trust daily."
+        }
+      }
+    }
+  },
+  "AddressSlider": {
+    "title": "Visit our office",
+    "subtitle": "in Berlin, Germany",
+    "location": "Berlin, Germany",
+    "description": "You're always welcome to visit us at the RaniClean Service office, conveniently located in the heart of Berlin.",
+    "address": "Kurfürstendamm 162, 10709 Berlin",
+    "phone": "+49 176 709 147 43",
+    "labels": {
+      "address": "Address",
+      "phone": "Phone Number",
+      "email": "Email"
+    }
   },
   "Navigation": {
     "home": "Home",
@@ -20,8 +232,32 @@
     "about": "About",
     "contact": "Contact",
     "legal": "Legal",
-    "privacy": "Privacy Policy",
     "imprint": "Imprint",
     "copyright": "All rights reserved."
+  },
+  "ImprintPage": {
+    "title": "Imprint",
+    "legalInfo": {
+      "title": "Information according to § 5 TMG",
+      "company": "Rani Cleanservice",
+      "owner": "Owner: Belgacem Ferchichi",
+      "address": "Kurfürstendamm 162",
+      "postalCode": "10709 Berlin",
+      "city": "Berlin",
+      "country": "Germany"
+    },
+    "contact": {
+      "title": "Contact",
+      "phone": "Phone: + 49 (0) 176 709 147 43",
+      "email": "Email: b.1975ferchichi@hotmail.com"
+    },
+    "tax": {
+      "title": "Tax ID",
+      "number": "Tax number: 24/285/04082"
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "content": "The content of this work was created with the greatest possible care. However, we assume no liability for the correctness, completeness and up-to-dateness of the content provided."
+    }
   }
 }

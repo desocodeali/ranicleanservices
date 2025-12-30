@@ -1,4 +1,4 @@
-import HomePage from "@/components/pages/home-page";
+import ServicesPage from "@/components/pages/services-page";
 import { setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 
@@ -18,12 +18,12 @@ export async function generateMetadata({
   const isGerman = locale === "de";
 
   const title = isGerman
-    ? "RaniClean Service - Professionelle Reinigungsdienste in Berlin"
-    : "RaniClean Service - Professional Cleaning Services in Berlin";
+    ? "Unsere Reinigungsdienstleistungen - RaniClean Service"
+    : "Our Cleaning Services - RaniClean Service";
   
   const description = isGerman
-    ? "Professionelle Reinigungsdienste für Wohnungen, Büros und Gewerbe in Berlin. Über 20 Jahre Erfahrung. Kommerzielle Reinigung, Fensterreinigung, umweltfreundliche Reinigung. Jetzt buchen!"
-    : "Professional cleaning services for homes, offices, and commercial spaces in Berlin. Over 20 years of experience. Commercial cleaning, window cleaning, eco-friendly cleaning. Book now!";
+    ? "Umfassende Reinigungslösungen: Gewerbereinigung, Fensterreinigung, umweltfreundliche Reinigung, Bodenreinigung, Gerätereinigung und Sanitärreinigung in Berlin."
+    : "Comprehensive cleaning solutions: Commercial cleaning, window cleaning, eco-friendly cleaning, floor cleaning, appliance cleaning, and restroom sanitization in Berlin.";
 
   return {
     title,
@@ -31,14 +31,14 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      url: `${baseUrl}/${locale}`,
+      url: `${baseUrl}/${locale}/services`,
       type: "website",
     },
     alternates: {
-      canonical: `${baseUrl}/${locale}`,
+      canonical: `${baseUrl}/${locale}/services`,
       languages: {
-        en: `https://ranicleangservice.com/en`,
-        de: `https://ranicleangservice.de/de`,
+        en: `https://ranicleangservice.com/en/services`,
+        de: `https://ranicleangservice.de/de/services`,
       },
     },
   };
@@ -53,5 +53,5 @@ export default async function Page({
   // Enable static rendering
   setRequestLocale(locale);
 
-  return <HomePage />;
+  return <ServicesPage />;
 }

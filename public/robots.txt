@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /imprint
+
+Sitemap: https://ranicleangservice.com/sitemap.xml
+Sitemap: https://ranicleangservice.de/sitemap.xml
+

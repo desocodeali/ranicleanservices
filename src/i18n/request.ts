@@ -4,7 +4,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   let locale = await requestLocale;
 
   if (!locale || !["en", "de"].includes(locale)) {
-    locale = "en";
+    locale = "de"; // Default to German
   }
 
   return {

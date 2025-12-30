@@ -1,9 +1,221 @@
 {
   "HomePage": {
-    "title": "Professionelle Reinigungsdienste für Wohnungen und Büros",
-    "subtitle": "Professionelle Reinigungsdienste für Ihr Zuhause und Büro.",
-    "getQuote": "Angebot einholen",
-    "ourServices": "Unsere Dienstleistungen"
+    "hero": {
+      "title": "Professionelle Reinigungsdienste für Wohnungen und Büros",
+      "subtitle": "Erleben Sie die Freude an einem makellosen Raum. Wir bringen über 20 Jahre Erfahrung zu Ihnen.",
+      "ctaPrimary": "Angebot einholen",
+      "ctaSecondary": "Unsere Leistungen"
+    },
+    "sections": {
+      "services": {
+        "title": "Unser Unternehmen bietet den besten Reinigungsservice",
+        "subtitle": "Umfassende Reinigungslösungen, die auf Ihre spezifischen Bedürfnisse zugeschnitten sind."
+      },
+      "whyUs": {
+        "title": "Warum RaniClean wählen?",
+        "subtitle": "Erleben Sie den Unterschied, den zwei Jahrzehnte Expertise, Innovation und unerschütterliches Engagement in jedem Raum, den wir betreuen, ausmachen",
+        "image1": {
+          "title": "Luxus-Hotel-Standards",
+          "description": "5-Sterne-Qualitätsreinigung für Ihr Zuhause und Büro"
+        },
+        "image2": {
+          "title": "Professionelle Exzellenz",
+          "description": "Ausgebildete Spezialisten, die konsistente Ergebnisse liefern"
+        },
+        "image3": {
+          "title": "Innovative Lösungen",
+          "description": "Moderne Techniken treffen auf traditionelle Zuverlässigkeit"
+        },
+        "features": {
+          "experience": {
+            "title": "20+ Jahre Expertise",
+            "description": "Zwei Jahrzehnte branchenführende Erfahrung in Hotels, Büros und Gewerberäumen"
+          },
+          "quality": {
+            "title": "Unnachgiebige Qualität",
+            "description": "Strenge Standards und Qualitätssicherung in jedem Projekt, das wir durchführen"
+          },
+          "flexibility": {
+            "title": "Flexible Terminplanung",
+            "description": "Verfügbar, wenn Sie uns brauchen, mit transparenter Preisgestaltung und ohne versteckte Gebühren"
+          },
+          "care": {
+            "title": "Fürsorgliches Team",
+            "description": "Respektvolle, motivierte Fachkräfte, die Ihren Raum mit größter Sorgfalt behandeln"
+          }
+        }
+      },
+      "testimonials": {
+        "title": "Was unsere Kunden sagen"
+      },
+      "faq": {
+        "title": "FAQ Alles, was Sie wissen müssen"
+      }
+    },
+    "servicesList": {
+      "commercial": {
+        "title": "Gewerbereinigung",
+        "description": "Zuverlässige Reinigung für Büros, Geschäfte und Unternehmen."
+      },
+      "window": {
+        "title": "Fensterreinigung",
+        "description": "Streifenfreie Fenster für kristallklare Aussichten."
+      },
+      "eco": {
+        "title": "Umweltfreundliche Reinigung",
+        "description": "Sichere, grüne Reinigung mit umweltbewussten Produkten und Methoden."
+      },
+      "floor": {
+        "title": "Bodenreinigung",
+        "description": "Strahlend saubere Böden mit Flecken- und Schmutzentfernung."
+      },
+      "appliance": {
+        "title": "Gerätereinigung",
+        "description": "Verlängern Sie die Lebensdauer Ihrer Geräte mit professioneller Reinigung."
+      },
+      "restroom": {
+        "title": "Sanitärreinigung",
+        "description": "Tiefenreinigung sorgt für makellose, hygienische und geruchsfreie Waschräume."
+      }
+    },
+    "features": {
+      "staff": "Über 20 Jahre Erfahrung",
+      "schedule": "Flexibilität & Erreichbarkeit",
+      "products": "Respektvoller & motivierter Umgang",
+      "pricing": "Transparenz & Individualität"
+    },
+    "testimonials": {
+      "review1": "Absolut fantastischer Service! Meine Wohnung sah noch nie so sauber aus.",
+      "review2": "Zuverlässig, professionell und gründlich. Sehr empfehlenswert für die Büroreinigung.",
+      "review3": "Das Team war pünktlich und hat bei der Umzugsreinigung fantastische Arbeit geleistet."
+    },
+    "faq": {
+      "q1": {
+        "question": "Welche Arten von Dienstleistungen bieten Sie an?",
+        "answer": "Wir bieten eine breite Palette von Reinigungslösungen an, einschließlich Sanitärreinigung, Gerätereinigung, Bodenreinigung, umweltfreundliche Reinigung, Fensterreinigung und gewerbliche Reinigung – damit Ihr Zuhause oder Geschäft makellos und hygienisch bleibt."
+      },
+      "q2": {
+        "question": "Wie viel kostet ein Reinigungsservice pro Stunde?",
+        "answer": "Unsere Preise hängen von der Größe Ihres Raums und der Art der benötigten Dienstleistung ab. Wir bieten transparente, erschwingliche Stundensätze ohne versteckte Kosten. Sie können auch ein kostenloses Angebot anfordern, um das beste Paket für Ihr Budget zu finden."
+      },
+      "q3": {
+        "question": "Muss ich während der Reinigung zu Hause sein?",
+        "answer": "Nein, Sie müssen nicht zu Hause sein, während wir reinigen. Unser Team ist voll ausgebildet, vertrauenswürdig und versichert. Sie können uns getrost alles überlassen und in eine frische, saubere Umgebung zurückkehren."
+      },
+      "q4": {
+        "question": "Sind Ihre Reinigungsprodukte sicher und umweltfreundlich?",
+        "answer": "Ja, absolut! Wir verwenden umweltfreundliche, ungiftige Reinigungsprodukte, die sicher für Ihre Familie, Haustiere und die Umwelt sind – für ein sauberes Zuhause ohne schädliche Chemikalien."
+      },
+      "q5": {
+        "question": "Wie kann ich einen Reinigungsservice buchen?",
+        "answer": "Die Buchung ist einfach! Sie können Ihre Reinigung online planen, uns direkt anrufen oder eine E-Mail senden. Wählen Sie ein Datum und eine Uhrzeit, die Ihnen am besten passen, und wir kümmern uns um den Rest."
+      }
+    },
+    "cta": {
+      "title": "Ihr sauberes, glückliches Zuhause ist nur einen Klick entfernt",
+      "subtitle": "Lassen Sie RaniClean Ihr Zuhause oder Büro in einen makellosen Rückzugsort verwandeln. Buchen Sie Ihren Service mit nur wenigen Klicks – schnell und einfach.",
+      "button": "Angebot einholen"
+    }
+  },
+  "AboutPage": {
+    "title": "Über Uns",
+    "subtitle": "Exzellenz in Reinigungsdienstleistungen, geliefert mit Präzision und Sorgfalt",
+    "story": {
+      "title": "Unsere Geschichte",
+      "content": "Mit über 20 Jahren Berufserfahrung in der Reinigungsbranche bringen wir unvergleichliche Expertise in jedes Projekt ein. Unsere umfassenden Dienstleistungen reichen von luxuriösen 2 bis 5-Sterne-Hotels über moderne Büros, medizinische Einrichtungen, spezialisierte Fensterreinigung bis hin zu öffentlichen Bereichen. Wir kombinieren traditionelle Reinigungsexzellenz mit innovativen Techniken und umweltfreundlichen Lösungen und operieren überregional, um unsere vielfältige Kundschaft zu bedienen.",
+      "philosophy": "Wir entwickeln maßgeschneiderte Lösungen, die auf Ihre individuellen Bedürfnisse und Visionen zugeschnitten sind. Unser Engagement für Flexibilität, Transparenz und ständige Verfügbarkeit zeichnet uns aus. Über die Einhaltung von Branchenstandards hinaus fördern wir eine Kultur des Respekts und der Motivation und stellen sicher, dass unser Team außergewöhnliche Ergebnisse liefert und dabei höchste Professionalität wahrt."
+    },
+    "stats": {
+      "experience": "Jahre Erfahrung",
+      "commitment": "Qualitätsengagement"
+    },
+    "gallery": {
+      "title": "Unsere Arbeit in Aktion",
+      "subtitle": "Sehen Sie, wie wir Räume mit Präzision, Sorgfalt und innovativen Reinigungslösungen transformieren",
+      "image1": "Professionelle Exzellenz",
+      "image2": "Umweltfreundliche Lösungen",
+      "image3": "Kommerzielle Expertise"
+    },
+    "features": {
+      "innovation": {
+        "title": "Innovation trifft Tradition",
+        "description": "Wir verbinden modernste Reinigungstechnologien mit bewährten Methoden und sorgen dafür, dass jeder Raum die perfekte Balance aus moderner Effizienz und bewährter Zuverlässigkeit erhält."
+      },
+      "quality": {
+        "title": "Unnachgiebige Qualitätsstandards",
+        "description": "Jedes Projekt durchläuft strenge Qualitätskontrollen. Wir reinigen nicht nur—wir schaffen Umgebungen, die Vertrauen, Gesundheit und Wohlbefinden für alle, die sie nutzen, inspirieren."
+      },
+      "team": {
+        "title": "Expertenteam, persönliche Note",
+        "description": "Unsere hochqualifizierten Fachkräfte bringen Leidenschaft und Engagement in jeden Job. Wir investieren in kontinuierliche Schulungen und Entwicklung, um sicherzustellen, dass unser Team an der Spitze der Branchenbest Practices bleibt."
+      }
+    }
+  },
+  "ContactPage": {
+    "title": "Kontaktieren Sie Uns",
+    "subtitle": "Wir sind für Sie da",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefon (optional)",
+      "service": "Dienstleistung",
+      "message": "Nachricht",
+      "submit": "Nachricht senden",
+      "sending": "Wird gesendet...",
+      "success": "Vielen Dank! Wir werden uns bald bei Ihnen melden.",
+      "sendAnother": "Weitere Nachricht senden",
+      "selectService": "Dienstleistung auswählen",
+      "errorTitle": "Fehler",
+      "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es später erneut.",
+      "validation": {
+        "nameMin": "Der Name muss mindestens 2 Zeichen lang sein",
+        "emailInvalid": "Ungültige E-Mail-Adresse",
+        "serviceRequired": "Bitte wählen Sie eine Dienstleistung aus",
+        "messageMin": "Die Nachricht muss mindestens 10 Zeichen lang sein"
+      },
+      "phoneNotProvided": "Nicht angegeben",
+      "services": {
+        "home": "Hausreinigung",
+        "office": "Büroreinigung",
+        "deep": "Tiefenreinigung"
+      }
+    },
+    "info": {
+      "address": "Adresse",
+      "phone": "Telefon",
+      "email": "E-Mail"
+    },
+    "whatWeCanDo": {
+      "title": "Was können wir tatsächlich für Sie tun?",
+      "subtitle": "Die Wahl von RaniClean bedeutet, Ihre Liebsten in die Hände eines tief engagierten, mitfühlenden und erfahrenen Teams zu geben—verpflichtet, außergewöhnliche Betreuung zu bieten",
+      "features": {
+        "experience": {
+          "title": "Erfahrung und Expertise",
+          "description": "Unser geschultes Team bringt jahrelange Erfahrung mit und gewährleistet hochwertige Reinigung mit Liebe zum Detail, Zuverlässigkeit und einem professionellen Touch bei jedem Einsatz."
+        },
+        "comprehensive": {
+          "title": "Umfassender Betreuungsansatz",
+          "description": "Wir gehen über die Oberflächenreinigung hinaus und kombinieren Tiefendesinfektion, umweltfreundliche Produkte und kontinuierliche Wartung für eine gesündere, sicherere Lebensumgebung."
+        },
+        "quality": {
+          "title": "Engagement für Qualität und Sicherheit",
+          "description": "Von sicheren Produkten bis hin zu geschultem Personal priorisieren wir Hygiene und Schutz—und liefern einen makellosen, erfrischenden Raum, dem Sie täglich vertrauen können."
+        }
+      }
+    }
+  },
+  "AddressSlider": {
+    "title": "Besuchen Sie unser Büro",
+    "subtitle": "in Berlin, Deutschland",
+    "location": "Berlin, Deutschland",
+    "description": "Sie sind jederzeit willkommen, uns im RaniClean Service Büro zu besuchen, das sich bequem im Herzen von Berlin befindet.",
+    "address": "Kurfürstendamm 162, 10709 Berlin",
+    "phone": "+49 176 709 147 43",
+    "labels": {
+      "address": "Adresse",
+      "phone": "Telefonnummer",
+      "email": "E-Mail"
+    }
   },
   "Navigation": {
     "home": "Startseite",
@@ -20,8 +232,32 @@
     "about": "Über uns",
     "contact": "Kontakt",
     "legal": "Rechtliches",
-    "privacy": "Datenschutz",
     "imprint": "Impressum",
     "copyright": "Alle Rechte vorbehalten."
+  },
+  "ImprintPage": {
+    "title": "Impressum",
+    "legalInfo": {
+      "title": "Angaben gemäß § 5 TMG",
+      "company": "Rani Cleanservice",
+      "owner": "Inhaber: Belgacem Ferchichi",
+      "address": "Kurfürstendamm 162",
+      "postalCode": "10709 Berlin",
+      "city": "Berlin",
+      "country": "Deutschland"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "phone": "Telefon: + 49 (0) 176 709 147 43",
+      "email": "E-Mail: b.1975ferchichi@hotmail.com"
+    },
+    "tax": {
+      "title": "Steuer-ID",
+      "number": "Steuernummer: 24/285/04082"
+    },
+    "disclaimer": {
+      "title": "Haftungsausschluss",
+      "content": "Der Inhalt dieses Werkes wurde mit größtmöglicher Sorgfalt erstellt. Wir übernehmen jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Inhalte."
+    }
   }
 }

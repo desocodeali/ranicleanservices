@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { LanguageSwitcher } from "./language-switcher";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
@@ -11,26 +11,28 @@ import { useState } from "react";
 
 export function Header() {
   const t = useTranslations("Navigation");
+  const locale = useLocale();
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { href: "/", label: t("home") },
-    { href: "/services", label: t("services") },
-    { href: "/about", label: t("about") },
-    { href: "/contact", label: t("contact") },
+    { href: `/${locale}`, label: t("home") },
+    { href: `/${locale}/services`, label: t("services") },
+    { href: `/${locale}/about`, label: t("about") },
+    { href: `/${locale}/contact`, label: t("contact") },
   ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="relative h-12 w-32 overflow-hidden">
+      <div className="container mx-auto flex h-20 md:h-24 items-center justify-between px-4">
+        <Link href={`/${locale}`} className="flex items-center gap-2">
+          <div className="relative h-20 w-64 md:h-24 md:w-80 overflow-hidden">
             <Image
-              src="/logo.webp"
+              src="/logo2.png"
               alt="RaniClean Service Logo"
               fill
               className="object-contain object-left"
               priority
+              unoptimized
             />
           </div>
         </Link>
@@ -48,7 +50,7 @@ export function Header() {
           ))}
           <LanguageSwitcher />
           <Button asChild>
-            <Link href="/contact">{t("bookNow")}</Link>
+            <Link href={`/${locale}/contact`}>{t("bookNow")}</Link>
           </Button>
         </nav>
 
@@ -75,7 +77,7 @@ export function Header() {
                   </Link>
                 ))}
                 <Button className="mt-4" asChild onClick={() => setIsOpen(false)}>
-                  <Link href="/contact">{t("bookNow")}</Link>
+                  <Link href={`/${locale}/contact`}>{t("bookNow")}</Link>
                 </Button>
               </nav>
             </SheetContent>

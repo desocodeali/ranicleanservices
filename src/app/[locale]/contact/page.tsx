@@ -1,4 +1,4 @@
-import HomePage from "@/components/pages/home-page";
+import ContactPage from "@/components/pages/contact-page";
 import { setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 
@@ -18,12 +18,12 @@ export async function generateMetadata({
   const isGerman = locale === "de";
 
   const title = isGerman
-    ? "RaniClean Service - Professionelle Reinigungsdienste in Berlin"
-    : "RaniClean Service - Professional Cleaning Services in Berlin";
+    ? "Kontakt - RaniClean Service Berlin"
+    : "Contact - RaniClean Service Berlin";
   
   const description = isGerman
-    ? "Professionelle Reinigungsdienste für Wohnungen, Büros und Gewerbe in Berlin. Über 20 Jahre Erfahrung. Kommerzielle Reinigung, Fensterreinigung, umweltfreundliche Reinigung. Jetzt buchen!"
-    : "Professional cleaning services for homes, offices, and commercial spaces in Berlin. Over 20 years of experience. Commercial cleaning, window cleaning, eco-friendly cleaning. Book now!";
+    ? "Kontaktieren Sie RaniClean Service für professionelle Reinigungsdienste in Berlin. Kurfürstendamm 162, 10709 Berlin. Telefon: +49 176 709 147 43"
+    : "Contact RaniClean Service for professional cleaning services in Berlin. Kurfürstendamm 162, 10709 Berlin. Phone: +49 176 709 147 43";
 
   return {
     title,
@@ -31,14 +31,14 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      url: `${baseUrl}/${locale}`,
+      url: `${baseUrl}/${locale}/contact`,
       type: "website",
     },
     alternates: {
-      canonical: `${baseUrl}/${locale}`,
+      canonical: `${baseUrl}/${locale}/contact`,
       languages: {
-        en: `https://ranicleangservice.com/en`,
-        de: `https://ranicleangservice.de/de`,
+        en: `https://ranicleangservice.com/en/contact`,
+        de: `https://ranicleangservice.de/de/contact`,
       },
     },
   };
@@ -53,5 +53,5 @@ export default async function Page({
   // Enable static rendering
   setRequestLocale(locale);
 
-  return <HomePage />;
+  return <ContactPage />;
 }

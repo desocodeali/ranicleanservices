@@ -1,8 +1,11 @@
+"use client";
+
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export function Footer() {
   const t = useTranslations("Footer");
+  const locale = useLocale();
   const year = new Date().getFullYear();
 
   return (
@@ -19,22 +22,22 @@ export function Footer() {
             <h4 className="mb-4 font-semibold">{t("links")}</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <Link href="/" className="hover:text-primary">
+                <Link href={`/${locale}`} className="hover:text-primary">
                   {t("home")}
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-primary">
+                <Link href={`/${locale}/services`} className="hover:text-primary">
                   {t("services")}
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-primary">
+                <Link href={`/${locale}/about`} className="hover:text-primary">
                   {t("about")}
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-primary">
+                <Link href={`/${locale}/contact`} className="hover:text-primary">
                   {t("contact")}
                 </Link>
               </li>
@@ -43,21 +46,47 @@ export function Footer() {
           <div>
             <h4 className="mb-4 font-semibold">{t("contact")}</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>email@example.com</li>
-              <li>+49 123 456 789</li>
-              <li>Berlin, Germany</li>
+              <li>
+                <a
+                  href="mailto:b.1975ferchichi@hotmail.com"
+                  className="hover:text-primary hover:underline"
+                >
+                  b.1975ferchichi@hotmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:ranicleanservice@yahoo.com"
+                  className="hover:text-primary hover:underline"
+                >
+                  ranicleanservice@yahoo.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+4917670914743"
+                  className="hover:text-primary hover:underline"
+                >
+                  +49 176 709 147 43
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://maps.google.com/?q=Kurfürstendamm+162,10709+Berlin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary hover:underline"
+                >
+                  Kurfürstendamm 162, 10709 Berlin
+                </a>
+              </li>
             </ul>
           </div>
           <div>
             <h4 className="mb-4 font-semibold">{t("legal")}</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <Link href="/privacy" className="hover:text-primary">
-                  {t("privacy")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/imprint" className="hover:text-primary">
+                <Link href={`/${locale}/imprint`} className="hover:text-primary">
                   {t("imprint")}
                 </Link>
               </li>
