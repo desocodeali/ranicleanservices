@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { ServiceCard } from "@/components/service-card";
@@ -11,10 +12,19 @@ import {
   Droplets,
   Scan,
 } from "lucide-react";
+import { CompactPageSkeleton } from "@/components/loading/page-skeleton";
 
 export default function ServicesPage() {
   const t = useTranslations("HomePage.servicesList");
   const tSection = useTranslations("HomePage.sections.services");
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, []);
 
   const services = [
     {
@@ -48,6 +58,10 @@ export default function ServicesPage() {
       icon: Droplets,
     },
   ];
+
+  if (isLoading) {
+    return <CompactPageSkeleton />;
+  }
 
   return (
     <div className="container px-4 py-16 md:px-6 md:py-24">

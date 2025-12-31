@@ -1,12 +1,26 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { CheckCircle2, History, Award, Sparkles, Shield, Users } from "lucide-react";
+import { History, Award, Sparkles, Shield, Users } from "lucide-react";
+import { CompactPageSkeleton } from "@/components/loading/page-skeleton";
 
 export default function AboutPage() {
   const t = useTranslations("AboutPage");
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <CompactPageSkeleton />;
+  }
 
   return (
     <div className="container px-4 py-16 md:px-6 md:py-24">
@@ -48,7 +62,7 @@ export default function AboutPage() {
             Philosophy
           </h2>
           <blockquote className="italic text-muted-foreground border-l-4 border-primary pl-4">
-            "{t("story.philosophy")}"
+            &ldquo;{t("story.philosophy")}&rdquo;
           </blockquote>
         </motion.div>
       </div>

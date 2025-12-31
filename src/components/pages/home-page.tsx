@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
@@ -14,11 +15,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import {
-  Home,
   Building2,
-  Sparkles,
-  Truck,
-  CheckCircle2,
   Leaf,
   Layers,
   WashingMachine,
@@ -29,10 +26,45 @@ import {
   Clock,
   Heart,
 } from "lucide-react";
+import { PageSkeleton } from "@/components/loading/page-skeleton";
 
 export default function HomePage() {
   const t = useTranslations("HomePage");
   const locale = useLocale();
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading time and wait for content/images
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 300);
+
+    // Check if images are loaded
+    const images = document.querySelectorAll("img");
+    if (images.length === 0) {
+      setIsLoading(false);
+      return;
+    }
+
+    let loadedCount = 0;
+    const checkImageLoad = () => {
+      loadedCount++;
+      if (loadedCount >= images.length || loadedCount >= 5) {
+        setIsLoading(false);
+      }
+    };
+
+    images.forEach((img) => {
+      if ((img as HTMLImageElement).complete) {
+        checkImageLoad();
+      } else {
+        img.addEventListener("load", checkImageLoad, { once: true });
+        img.addEventListener("error", checkImageLoad, { once: true });
+      }
+    });
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
@@ -73,12 +105,6 @@ export default function HomePage() {
     },
   ];
 
-  const features = [
-    t("features.staff"),
-    t("features.schedule"),
-    t("features.products"),
-    t("features.pricing"),
-  ];
 
   const testimonials = [
     {
@@ -125,6 +151,10 @@ export default function HomePage() {
       id: "item-5",
     },
   ];
+
+  if (isLoading) {
+    return <PageSkeleton />;
+  }
 
   return (
     <div className="flex flex-col">
@@ -358,7 +388,7 @@ export default function HomePage() {
           </motion.div>
           <div className="mx-auto max-w-3xl">
             <Accordion type="single" collapsible className="w-full">
-              {faqs.map((faq, index) => (
+              {faqs.map((faq) => (
                 <AccordionItem key={faq.id} value={faq.id}>
                   <AccordionTrigger className="text-lg font-medium text-left">
                     {faq.question}

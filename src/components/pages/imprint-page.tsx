@@ -1,10 +1,24 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import { CompactPageSkeleton } from "@/components/loading/page-skeleton";
 
 export default function ImprintPage() {
     const t = useTranslations("ImprintPage");
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 300);
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (isLoading) {
+        return <CompactPageSkeleton />;
+    }
 
     return (
         <div className="container px-4 py-16 md:px-6 md:py-24">

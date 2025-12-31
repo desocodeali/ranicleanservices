@@ -11,7 +11,7 @@ import { CheckCircle2, AlertCircle } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { FormField } from "@/components/forms/form-field";
 import { FormSelect } from "@/components/forms/form-select";
-import { createContactFormSchema } from "@/lib/validation/contact-form.schema";
+import { createContactFormSchema, type ContactFormData } from "@/lib/validation/contact-form.schema";
 import { EmailJSService } from "@/lib/services/emailjs.service";
 import { fadeInUp } from "@/lib/constants/animations";
 
@@ -39,11 +39,11 @@ export function ContactForm() {
     handleSubmit,
     formState: { errors, isSubmitting },
     reset,
-  } = useForm({
+  } = useForm<ContactFormData>({
     resolver: zodResolver(formSchema),
   });
 
-  const onSubmit = async (data: any) => {
+  const onSubmit = async (data: ContactFormData) => {
     setSubmitError(null);
     try {
       await EmailJSService.sendContactForm(data, t("form.phoneNotProvided"));

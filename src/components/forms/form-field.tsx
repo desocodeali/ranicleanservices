@@ -1,6 +1,6 @@
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { ReactNode } from "react";
+import { UseFormRegisterReturn } from "react-hook-form";
 
 /**
  * Form Field Component
@@ -15,7 +15,7 @@ export interface FormFieldProps {
   type?: "text" | "email" | "tel" | "textarea";
   rows?: number;
   error?: string;
-  register: any; // react-hook-form register function
+  register: (name: string) => UseFormRegisterReturn;
   required?: boolean;
 }
 

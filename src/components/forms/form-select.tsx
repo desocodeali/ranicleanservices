@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { UseFormRegisterReturn } from "react-hook-form";
 
 /**
  * Form Select Component
@@ -12,7 +12,7 @@ export interface FormSelectProps {
   label: string;
   options: Array<{ value: string; label: string }>;
   error?: string;
-  register: any; // react-hook-form register function
+  register: (name: string) => UseFormRegisterReturn;
   placeholder?: string;
   required?: boolean;
 }
