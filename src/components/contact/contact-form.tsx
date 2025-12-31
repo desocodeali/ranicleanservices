@@ -95,7 +95,7 @@ export function ContactForm() {
                     </Alert>
                   )}
 
-                  <FormField
+                  <FormField<ContactFormData>
                     id="name"
                     label={t("form.name")}
                     type="text"
@@ -104,7 +104,7 @@ export function ContactForm() {
                     required
                   />
 
-                  <FormField
+                  <FormField<ContactFormData>
                     id="email"
                     label={t("form.email")}
                     type="email"
@@ -113,7 +113,7 @@ export function ContactForm() {
                     required
                   />
 
-                  <FormField
+                  <FormField<ContactFormData>
                     id="phone"
                     label={t("form.phone")}
                     type="tel"
@@ -121,7 +121,7 @@ export function ContactForm() {
                     register={register}
                   />
 
-                  <FormSelect
+                  <FormSelect<ContactFormData>
                     id="service"
                     label={t("form.service")}
                     options={serviceOptions}
@@ -131,7 +131,7 @@ export function ContactForm() {
                     required
                   />
 
-                  <FormField
+                  <FormField<ContactFormData>
                     id="message"
                     label={t("form.message")}
                     type="textarea"
